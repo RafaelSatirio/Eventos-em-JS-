@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+    <link rel="stylesheet" href="onclick.css"></link>
+</head>
+<body>
+    <p>
+        O onclick é um evento do JavaScript que é acionado quando um elemento HTML é clicado pelo usuário. Ele permite que você execute uma função específica sempre que o usuário clica em um elemento específico em sua página web, como um botão, uma imagem ou um link.
+
+Você pode usar o onclick para criar interatividade em sua página web, permitindo que os usuários acionem ações, como abrir um pop-up, fazer uma solicitação de serviço, executar uma animação, entre outros.
+
+O onclick pode ser adicionado a um elemento HTML de várias maneiras. Uma delas é usando o atributo onclick diretamente no elemento, como no exemplo abaixo:
+    </p>
+    <button onclick="minhaFuncao()">Clique em mim</button>
+
+    <p>
+        Neste exemplo, a função minhaFuncao() será executada sempre que o botão for clicado, mostrando um alerta.
+Também é possível adicionar o onclick dinamicamente usando JavaScript, selecionando o elemento HTML por meio do DOM (Modelo de Objeto do Documento) e adicionando um manipulador de eventos. Essa abordagem é útil para adicionar o evento a elementos que são criados dinamicamente ou que já existem no DOM.
+    </p>
+    <script>
+        function minhaFuncao(){
+            alert("FUNÇÃO ATIVADA")
+        }
+    </script>
+</body>
+</html>

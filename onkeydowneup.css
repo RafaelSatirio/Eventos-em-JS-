@@ -1,0 +1,29 @@
+body, html {
+    background-color: lightgrey;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    font: normal 18pt Arial;
+}
+
+p#resultado {
+    text-align: center;
+}
+
+input#input-text {
+padding: 15px;    
+width: 13%;
+margin-top: auto;
+margin-left: 43%;
+margin-bottom: auto;
+margin-right: 50%;
+border-radius: 15px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On key Down e Up</title>
+    <link rel="stylesheet" href="onkeydowneup.css"></link>
+</head>
+<body>
+    <h1>Mouse Out e Over</h1>
+    <p>
+        onkeydown e onkeyup são eventos de teclado em JavaScript que são acionados quando uma tecla é pressionada e solta, respectivamente.
+O evento onkeydown é acionado quando uma tecla é pressionada no teclado. Você pode definir uma função de callback para este evento e o navegador chamará essa função quando o evento ocorrer. A função de callback recebe um objeto Event como seu único argumento, que contém informações sobre o evento, como o código da tecla pressionada.
+O evento onkeyup é acionado quando uma tecla é liberada após ser pressionada. Você também pode definir uma função de callback para este evento e o navegador chamará essa função quando o evento ocorrer. A função de callback recebe um objeto Event como seu único argumento, que contém informações sobre o evento, como o código da tecla liberada.
+Esses eventos são úteis para implementar ações em resposta a entradas do teclado, como mover um personagem em um jogo, preencher um formulário ou executar uma pesquisa.
+aqui está um exemplo básico de como usar onkeydown e onkeyup em JavaScript para detectar quando se clica no input e a tecla 'Enter' é pressionada e soltada:
+    </p>
+    <input type="text" id="input-text" placeholder="clique aqui e depois Pressione Enter">
+    <p id="resultado"></p>
+    <script>
+      const inputText = document.getElementById("input-text");
+      const resultado = document.getElementById("resultado");
+      
+      inputText.onkeydown = function(event) {
+        if (event.key === "Enter") {
+          resultado.textContent = "Você pressionou a tecla Enter!";
+        }
+      };
+      
+      inputText.onkeyup = function(event) {
+        if (event.key === "Enter") {
+          resultado.textContent = "Você soltou a tecla Enter!";
+        }
+      };
+    </script>
+</body>
+</html>

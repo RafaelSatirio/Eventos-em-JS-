@@ -1,0 +1,18 @@
+body, html {
+    background-color: lightgrey;
+}
+
+p {
+    background-color: rgb(52, 52, 52);
+    color: white;
+    width: 900px;
+    height: 170px;
+    text-align: center;
+    font: normal 18pt Arial;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
